@@ -1,3 +1,3 @@
 function Hello(){
-    alert(2*2);
+    alert(8*8);
 }
