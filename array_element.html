@@ -6,19 +6,19 @@
     <title>Document</title>
 </head>
 <body>
-    <h2>array  update and delete</h2>
-    <script>
+    <!-- <h2>array  update and delete</h2> -->
+    <!-- <script>
     var a =["Gaurav",25,"pune","software","mumbai"]
      document.write(a+"<br>");
      a[2]="bhosari";
-     a[4]="satara";
+     a[4]="satara";//uodate
       document.write(a+"<br>");
 
       delete a[2] ;
-      delete a[4];
+      delete a[4];//delete
        document.write(a+"<br>");
-  </script>
-    <h2>Sorting and reverse</h2>
+  </script> -->
+    <!-- <h2>Sorting and reverse</h2>
     <script>
         var b=["shantanu","sumedh","mansoor","ashvini","pratiksha","swati"];
                         document.write(b+"<br>");
@@ -26,8 +26,8 @@
             document.write(b+"<br>");
             b.reverse();
             document.write(b+"<br>");
-    </script>
-
+    </script> -->
+<!-- 
     <br>
     <h2>Pop and Push Methods</h2>
     <script>
@@ -40,8 +40,8 @@
                     c.push("Bhumi");
                                 document.write(c+"<br>");
 
-    </script>
-    <br>
+    </script> -->
+    <!-- <br>
     <h2>Shift and Unshift</h2>
     <script>
         var d=["shantanu","sumedh","mansoor","ashvini","pratiksha","swati"];
@@ -54,8 +54,8 @@
 
     </script>
 
-<br>
-<h2>Concat and join</h2>
+<br> -->
+<!-- <h2>Concat and join</h2>
 <script>
     var a=["shantanu","sumedh","mansoor","ashvini","pratiksha","swati"];
     var b=["gaurav","darshan","omkar"];
@@ -65,8 +65,90 @@
 
     var x =e.join("/");
     document.write(x,"<br");
-</script>
+</script> -->
 
     
+
+<h2>Array update and delete</h2>
+<script>
+    var a =["ayush",25,"computer","Software Developer","Pune"];
+    document.write(a+"<br>");
+    a[4]="mumbai";
+    a[2]="apple";
+        document.write(a+"<br>");
+        //delete
+        // delete a['computer'];
+        delete a[2];
+            document.write(a+"<br>");
+</script>
+<hr>
+
+<h2>Sorting And Reverse</h2>
+<script>
+    var b = ['apple','gaurav','sumedh','shantanu','darshan','chakuli'];
+    document.write(b + "<br>");
+    b.sort();
+    document.write(b + "<br>");
+    b.reverse();
+    document.write(b+ "<br>");
+    
+    
+</script>
+
+
+<hr>
+<h3>Pop And Push MEthod</h3>
+<script> 
+ var c = ['apple','gaurav','sumedh','shantanu','darshan','chakuli'];
+ c.pop();
+ c.pop();
+ document.write(c + "<br>");
+ c.push('swapnil');
+ c.push('ayush');
+  document.write(c + "<br>");
+
+  var p =c.join("/");
+    document.write(p+ "<br>");
+
+    
+
+
+ </script>
+ <hr>
+
+ <br>
+ <h2>Shift and Unshift</h2>
+ <script>
+ var d =['apple','gaurav','sumedh','shantanu','darshan','chakuli'];
+ document.write(d+"<br>");
+ d.shift();
+  document.write(d+"<br>");
+  d.unshift('sujal');
+  d.unshift('swapnali');
+  d.unshift('khushi');
+
+   document.write(d+"<br>");
+   var z=d.join("/");
+   document.write(z+"<br>");
+
+
+ </script>
+ <hr>
+
+<h2>concat and Join</h2>
+<Script>
+    var a=["shantanu","sumedh","mansoor","ashvini","pratiksha","swati"];
+    var b=["gaurav","darshan","omkar"];
+    var d=["ayush","sujal","Piyush"];
+    var e =a.concat(b,d);
+    document.write(e+"<br>");
+
+    var x =e.join("/");
+    document.write(x+"<br>");
+
+
+</Script>
+
+
 </body>
 </html>

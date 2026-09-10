@@ -6,7 +6,7 @@
     <title>Document</title>
 </head>
 <body>
-    <h3>Example 1-change Text</h3>
+    <!-- <h3>Example 1-change Text</h3>
     <h1 id="title">Hello Its Gaurav</h1>
     <button onclick="changeText()">Change Text</button>
     <script>
@@ -15,8 +15,8 @@
 
 
         }
-    </script>
-    <h3>Example 2-change style using DOM</h3>
+    </script> -->
+    <!-- <h3>Example 2-change style using DOM</h3>
     <p id="msg">aaaaaaaaaaaaaaaaaaaaaaaaaaaa bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb ccccccccccccccccccccccccccccccccccccc
         dddddddddddddddddddddddddddddddd eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee ffffffffffffffffffffffffffff
         ghkdhhldfhljfkkj khdshkhkfjjskjkihirfe m ihhisdhiijk;d;hh;fr;jjdjshjhhhhhhhhhhhhhhhhhhhhhhhhh
@@ -26,8 +26,8 @@
         function changecolor(){
             document.getElementById('msg').style.color='blue';
         }
-    </script>
-    <hr>
+    </script> -->
+    <!-- <hr>
     <h3>Change Image using Dom</h3>
     <img id ="myimg" src ="images/image2.jpg" width="300"/>
     <button onclick ="changeImage()">Change Image</button>
@@ -35,8 +35,8 @@
         function changeImage(){
             document.getElementById('myimg').src="images/image1.jpg";
         }
-    </script>
-
+    </script> -->
+<!-- 
     <hr>
     <h3>Get Input From user and Display</h3>
     <input type ="text" id ="nameInput" placeholder="Enter Name"/>
@@ -47,7 +47,7 @@
             let name =document.getElementById('nameInput').value;
             document.getElementById('output').innerHTML =' hello welcome'+ name;
         }
-    </script>
+    </script> -->
 
 <hr>
 <h3>Change font size using +,-</h3>
@@ -68,9 +68,9 @@
         document.getElementById('para').style.fontSize = size+'px';
 
     }
-</script>
+</script> 
 
-
+<!-- 
 <hr>
 
 <button onclick ="toggleTheme()">Toggle Theme</button>
@@ -87,7 +87,97 @@
     function toggleTheme(){
         document.body.classList.toggle("dark-mode");
     }
+</script> -->
+
+
+
+<h2>Example-1 Change Text</h2>
+<h1 id="title">Hello its  Gaurav</h1>//we can use onmouseout,onmouseenter and other button event-keys;
+<button onmouseout="changeText()">Change Text</button>
+<script>
+    function changeText(){
+        document.getElementById("title").innerHTML="I am from pune";
+    }
 </script>
 
+<hr>
+<hr>
+<h2>Example-2 Change Style using dom</h2>
+<p id="msg">jhbjhdsbjhbjhbjn jvc jjdfshianljnlkkjnlkjnjsjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjj sssssssssssss
+    ssssssssssssssssssssssssssssjjjjjjjjjjjjjjjjjjjjjjdddddddddddddddddddddkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkk
+    mmmmmmmmmmmmmmmmmmmmmmmmmmmmnnnnnnnnnnnnnnn dddddddddddddddddddddddddddddddd rrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrr
+</p>
+<button onclick="changeStyle()">Change Style</button>
+<script>
+    function changeStyle(){
+        document.getElementById("msg").style.color="blue";
+        document.getElementById("msg").style.color="red";
+    }
+</script>
+
+<hr>
+
+
+<h2>Change Image using Dom</h2>
+<img id ="image" src="images/image1.jpg " width="300"></h2>
+<button onclick ="changeImage()">Change-Image</button>
+<script>
+    function changeImage(){
+        document.getElementById("image").src ="images/image2.jpg";
+    }
+
+</script>
+
+<hr>
+
+ <!-- <hr>
+    <h3>Get Input From user and Display</h3>
+    <input type ="text" id ="nameInput" placeholder="Enter Name"/>
+    <button onclick="showName()">Submit</button>
+    <h2 id ="output"></h2>
+    <script>
+        function showName(){
+            let name =document.getElementById('nameInput').value;
+            document.getElementById('output').innerHTML =' hello welcome'+ name;
+        }
+    </script> -->
+
+    <h3>Get input from user </h3>
+    <input type ="text" id ="nameInput" placeholder="Enter name "/>
+    <button onclick="showMessage()">Submit</button>
+    <h2 id ="output"></h2>
+
+    <script>
+        function showMessage(){
+            let name =document.getElementById("nameInput").value;
+            document.getElementById("output").innerHTML='welcome   ' + name;
+        }
+    </script>
+
+<hr>
+
+
+<button onclick="toggleTheme()">Toggle theme</button>
+<style>
+    body{
+        background-color: black;
+        color: aquamarine;
+        transition:0.3sec;
+    }
+    .dark-mode{
+        background-color:white;color:red;
+    }
+</style>
+<script>
+    function toggleTheme(){
+        document.body.classList.toggle("dark-mode");
+    }
+</script>
+
+
+
+
+
+ 
 </body>
 </html>
