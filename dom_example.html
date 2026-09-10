@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h3>Example 1-change Text</h3>
+    <h1 id="title">Hello Its Gaurav</h1>
+    <button onclick="changeText()">Change Text</button>
+    <script>
+        function changeText(){
+            document.getElementById('title').innerHTML='I am from solapur';
+
+
+        }
+    </script>
+    <h3>Example 2-change style using DOM</h3>
+    <p id="msg">aaaaaaaaaaaaaaaaaaaaaaaaaaaa bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb ccccccccccccccccccccccccccccccccccccc
+        dddddddddddddddddddddddddddddddd eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee ffffffffffffffffffffffffffff
+        ghkdhhldfhljfkkj khdshkhkfjjskjkihirfe m ihhisdhiijk;d;hh;fr;jjdjshjhhhhhhhhhhhhhhhhhhhhhhhhh
+    </p>
+    <button onclick ="changecolor()">Change color</button>
+    <script>
+        function changecolor(){
+            document.getElementById('msg').style.color='blue';
+        }
+    </script>
+    <hr>
+    <h3>Change Image using Dom</h3>
+    <img id ="myimg" src ="images/image2.jpg" width="300"/>
+    <button onclick ="changeImage()">Change Image</button>
+    <script>
+        function changeImage(){
+            document.getElementById('myimg').src="images/image1.jpg";
+        }
+    </script>
+
+    <hr>
+    <h3>Get Input From user and Display</h3>
+    <input type ="text" id ="nameInput" placeholder="Enter Name"/>
+    <button onclick="showName()">Submit</button>
+    <h2 id ="output"></h2>
+    <script>
+        function showName(){
+            let name =document.getElementById('nameInput').value;
+            document.getElementById('output').innerHTML =' hello welcome'+ name;
+        }
+    </script>
+
+<hr>
+<h3>Change font size using +,-</h3>
+<p id="para">jhdshbjhbfjhdkvjfnbh njhhhhhhhhhhhhhhhhhhhhhh hhhhhhhhhhhhhhhhhhdkkkkkkkkkkkkk
+    dsjjjjjjjjjjnjnkdsjfnjdnknfrenijnjnjnckvnkjnijefkjvkjniujdsnjfvlmaxnjofakj;lk;lkojojnfsa
+    jasndiuhiuaaaaaaaaaaaaaaaaaaaa ddddddddddddddddddddddddddd jjjjjjjjjjjjjjjjjjjjjjjjjjjj
+</p>
+<button onclick ="increase()">+</button>
+<button onclick ="decrease()">-</button>
+<script>
+    let size =16;
+    function increase() {
+        size++;
+        document.getElementById('para').style.fontSize = size+'px';
+    }
+         function decrease(){
+        size--;
+        document.getElementById('para').style.fontSize = size+'px';
+
+    }
+</script>
+
+
+<hr>
+
+<button onclick ="toggleTheme()">Toggle Theme</button>
+<style>
+    body{
+        background-color: white;color:black;transition:0.3sec;
+    }
+    .dark-mode{
+        background-color: black;
+        color:white;
+    }
+</style>
+<script>
+    function toggleTheme(){
+        document.body.classList.toggle("dark-mode");
+    }
+</script>
+
+</body>
+</html>
